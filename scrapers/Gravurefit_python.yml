@@ -1,0 +1,30 @@
+name: "Gravurefit Python"
+# requires: py_common
+
+sceneByFragment:
+  action: script
+  script:
+    - python
+    - Gravurefit_python.py
+sceneByName:
+  action: script
+  script:
+    - python
+    - Gravurefit_python.py
+    - searchName
+sceneByQueryFragment:
+  action: script
+  script:
+    - python
+    - Gravurefit_python.py
+    - validSearch
+sceneByURL:
+  - action: script
+    url:
+      - www.gravurefit.com/
+      - gravurefit.com/
+    script:
+      - python
+      - Gravurefit_python.py
+      - validSearch
+# Last Updated: patched to run Gravurefit (FlareSolverr-only)
